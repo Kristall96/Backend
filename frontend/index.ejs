@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul id="nav-bar">
+        <li><a href="#" id="home-link">Home</a></li>
+        <li id="login-link"><a href="#">Login</a></li>
+        <li id="register-link"><a href="#">Register</a></li>
+        <li id="logout-link"><a href="#">Logout</a></li>
+        <li id="profile-link"><a href="#">Profile</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="welcome-message">Welcome to the Authentication System</h2>
+
+    <div id="auth-section">
+      <!-- Register Form -->
+      <div id="register-form">
+        <h3>Register</h3>
+        <input type="text" id="reg-username" placeholder="Username" />
+        <input type="email" id="reg-email" placeholder="Email" />
+        <input type="password" id="reg-password" placeholder="Password" />
+        <button id="register-button">Register</button>
+      </div>
+
+      <!-- Login Form -->
+      <div id="login-form">
+        <h3>Login</h3>
+        <input type="email" id="login-email" placeholder="Email" />
+        <input type="password" id="login-password" placeholder="Password" />
+        <button id="login-button">Login</button>
+      </div>
+    </div>
+
+    <!-- ✅ Use `nonce` Correctly -->
+    <script nonce="<%= nonce %>" src="script.js"></script>
+  </body>
+</html>
