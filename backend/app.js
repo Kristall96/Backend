@@ -4,8 +4,8 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
-import csurf from "csurf"; // ✅ CSRF Protection
-import crypto from "crypto"; // ✅ Nonce Generation
+import csurf from "csurf";
+import crypto from "crypto";
 import { fileURLToPath } from "url";
 import path from "path";
 import connectDB from "./config/db.js";
